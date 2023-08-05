@@ -6,8 +6,8 @@ export default {
 
 <template>
     <!-- MAIN PAGE -->
-  <div class="flex flex-col rounded-3xl justify-center align-center my-20 mx-8 md:mx-24 xl:mx-96 xl:my-48" style="background-color: var(--Background-secondary);">
-   <div class="text-center py-8 px-3 sm:px-14 lg:px-32 lg:py-16">
+  <div class="flex flex-col rounded-3xl justify-center align-center my-20 mx-5 sm:mx-32 xl:mx-96 xl:my-48" style="background-color: var(--Background-secondary);">
+   <div class="text-center py-8 px-5 sm:px-14 lg:px-32 lg:py-16">
     <!-- TITLE -->
     <div class="font-bold text-sm lg:text-xl ">Welcome to Codershouse!</div>
     <!-- PARAGRAPH -->
