@@ -11,5 +11,13 @@ export default {
 </script>
 
 <style>
-
+  .btn-blue{
+    background-color: var(--Blue);
+  }
+  .btn-blue:hover{
+    background-color:rgb(41, 41, 198);
+  }
+  .btn-blue:focus{
+    background-color: blue;
+  }
 </style>
