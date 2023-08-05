@@ -1,0 +1,12 @@
+html{
+    font-size: 14px;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background: #121212;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
