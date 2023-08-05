@@ -5,8 +5,22 @@ html{
     font-family: 'Nunito', sans-serif;
 }
 body{
-    background: #121212;
-    color: #fff;
+    background: var(--Background-primary);
+    color: var(--Primary-text);
     font-size: 1rem;
     font-weight: 400;
+}
+:root{
+    --Background-primary:#121212;
+    --Background-secondary:#1D1D1D;
+    --Primary-text:#FFFFFF;
+    --Secondary-text:#C4C5C5;
+    --Blue:#0077FF;
+    --Indigo:#5453E0;
+    --Sucess:#20BD5F;
+    --Danger:#F44336;
+    --Pink:#E91E63;
+    --Hr-color:#323232;
+    --Input-background:#262626;
+    --Danger:#F44336;
 }
