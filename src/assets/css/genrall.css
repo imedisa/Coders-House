@@ -26,6 +26,8 @@ body {
 }
 .number__input {
   background-color: var(--Input-background);
+  font-weight: 400px;
+  font-size: 18px;
 }
 .number__input::placeholder {
   color: #454545;
