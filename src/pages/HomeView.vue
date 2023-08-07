@@ -6,7 +6,10 @@ export default {
 
 <template>
     <!-- MAIN PAGE -->
-  <div class="flex flex-col rounded-3xl justify-center align-center my-20 mx-5 sm:mx-32 xl:mx-96 xl:my-48" style="background-color: var(--Background-secondary);">
+    <!-- my-20 -->
+    <!-- xl:my-48 -->
+  <div class="h-[calc(100vh-2rem)] flex justify-items-center items-center">
+    <div class="flex flex-col rounded-3xl justify-center align-center mx-5" style="background-color: var(--Background-secondary);">
    <div class="text-center py-8 px-5 sm:px-14 lg:px-32 lg:py-16">
     <!-- TITLE -->
     <div class="font-bold text-sm lg:text-xl ">Welcome to Codershouse!</div>
@@ -18,9 +21,10 @@ export default {
     </div>
     <!-- SIGN UP -->
     <div class=" flex-row text-xs lg:text-base text-center mx-0 mt-2 lg:mt-5" style="color: var(--Blue);">
-        <a href="" class="mr-1">Have an invite text?</a>
-        <a href="" class="ml-1 font-bold">Sign in</a>
+        <router-link to="" class="mr-1">Have an invite text?</router-link>
+        <router-link to="/auth" class="ml-1 font-bold">Sign in</router-link>
     </div>
    </div>
+  </div>
   </div>
 </template>
