@@ -9,7 +9,7 @@ export default {
     <!-- my-20 -->
     <!-- xl:my-48 -->
   <div class="h-[calc(100vh-2rem)] flex justify-items-center items-center">
-    <div class="flex flex-col rounded-3xl justify-center align-center mx-5" style="background-color: var(--Background-secondary);">
+    <div class="flex flex-col rounded-3xl justify-center align-center lg:w-650  md:w-650 sm:w-650  mx-auto w-full" style="background-color: var(--Background-secondary);">
    <div class="text-center py-8 px-5 sm:px-14 lg:px-32 lg:py-16">
     <!-- TITLE -->
     <div class="font-bold text-sm lg:text-xl ">Welcome to Codershouse!</div>

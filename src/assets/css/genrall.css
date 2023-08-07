@@ -31,5 +31,5 @@ body {
   color: #454545;
 }
 .number__input:focus{
-    border: var(--Blue);
+    border-color: var(--Blue);
 }
