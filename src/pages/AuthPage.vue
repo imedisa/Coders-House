@@ -1,6 +1,6 @@
 <template>
-  <div  class="text-center h-[calc(100vh-2rem)]  justify-items-center items-center">
-    <div style="background-color: var(--Background-secondary);" class=" flex-col rounded-3xl justify-center align-center mx-5" >
+  <div  class="text-center h-[calc(100vh-2rem)]  flex justify-items-center items-center">
+    <div  class=" flex-col rounded-3xl justify-center align-center bg-dark-primary mx-auto  " >
         <div class=" py-8 px-5 sm:px-14 lg:px-32 lg:py-16">
             <div class="flex justify-center gap-x-3 ">
             <img class="scale-50 lg:scale-100" src="../assets/images/svgs/Emoji.svg" alt="telephone icon =)">
