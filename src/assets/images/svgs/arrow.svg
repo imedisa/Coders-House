@@ -1,0 +1,14 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="16" height="16" fill="#434545"/>
+<g id="Step 9" clip-path="url(#clip0_0_1)">
+<rect width="1440" height="1024" transform="translate(-107 -172)" fill="#121212"/>
+<g id="Group 17">
+<path id="arrow" d="M16 7H3.83L9.42 1.41L8 0L0 8L8 16L9.41 14.59L3.83 9H16V7Z" fill="white"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="1024" fill="white" transform="translate(-107 -172)"/>
+</clipPath>
+</defs>
+</svg>
