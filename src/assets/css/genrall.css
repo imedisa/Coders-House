@@ -1,26 +1,35 @@
-html{
-    font-size: 14px;
+html {
+  font-size: 14px;
 }
-*{
-    font-family: 'Nunito', sans-serif;
+* {
+  font-family: 'Nunito', sans-serif;
 }
-body{
-    background: var(--Background-primary);
-    color: var(--Primary-text);
-    font-size: 1rem;
-    font-weight: 400;
+body {
+  background: var(--Background-primary);
+  color: var(--Primary-text);
+  font-size: 1rem;
+  font-weight: 400;
 }
-:root{
-    --Background-primary:#121212;
-    --Background-secondary:#1D1D1D;
-    --Primary-text:#FFFFFF;
-    --Secondary-text:#C4C5C5;
-    --Blue:#0077FF;
-    --Indigo:#5453E0;
-    --Sucess:#20BD5F;
-    --Danger:#F44336;
-    --Pink:#E91E63;
-    --Hr-color:#323232;
-    --Input-background:#262626;
-    --Danger:#F44336;
+:root {
+  --Background-primary: #121212;
+  --Background-secondary: #1d1d1d;
+  --Primary-text: #ffffff;
+  --Secondary-text: #c4c5c5;
+  --Blue: #0077ff;
+  --Indigo: #5453e0;
+  --Sucess: #20bd5f;
+  --Danger: #f44336;
+  --Pink: #e91e63;
+  --Hr-color: #323232;
+  --Input-background: #262626;
+  --Danger: #f44336;
+}
+.number__input {
+  background-color: var(--Input-background);
+}
+.number__input::placeholder {
+  color: #454545;
+}
+.number__input:focus{
+    border: var(--Blue);
 }
