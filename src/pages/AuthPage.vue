@@ -1,6 +1,6 @@
 <template>
   <div  class="text-center h-[calc(100vh-2rem)]  flex justify-items-center items-center">
-    <div  class=" flex-col rounded-3xl justify-center align-center bg-dark-primary mx-auto " >
+    <div  class="rounded-3xl justify-center align-center bg-dark-primary mx-auto " >
         <div class=" py-8 px-5 sm:px-14 lg:px-32 lg:py-16">
             <div class="flex justify-center gap-x-3 ">
             <img class="scale-50 lg:scale-100" src="../assets/images/svgs/Emoji.svg" alt="telephone icon =)">
@@ -10,7 +10,11 @@
         </div>
         <div class="">
             <form @submit.prevent="">
-                <input class="px-5 py-2 rounded-lg mt-5  lg:mt-11 number__input" type="number" placeholder="+91 9823 324223">
+                {{ 
+                    phoneNumber
+                 }}
+                <TextField placeholder="+91 9823 324223" v-model="phoneNumber"/>
+                <!-- <input class="px-5 py-2 rounded-lg mt-5  lg:mt-11 number__input" type="number" placeholder="+91 9823 324223"> -->
             </form>
         </div>
         <div class="mt-8 lg:mt-14">
@@ -23,10 +27,16 @@
 </template>
 
 <script>
+import TextField from '../components/TextField/index.vue'
 export default {
+    components:{
+        TextField
+    },
     data(){
         return {
-            step:1
+            step:1,
+            phoneNumber:""
+
         }
     },
     methods:{

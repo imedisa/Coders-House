@@ -21,8 +21,16 @@ export default {
     </div>
     <!-- SIGN UP -->
     <div class=" flex-row text-xs lg:text-base text-center mx-0 mt-2 lg:mt-5 text-blue">
-        <router-link to="" class="mr-1">Have an invite text?</router-link>
-        <router-link to="/auth" class="ml-1 font-bold">Sign in</router-link>
+      <router-link to="/auth">
+        <span class="mr-1">
+          Have an invite text?
+        </span>
+        <span  class="ml-1 font-bold">
+          Sign in
+        </span>
+      </router-link>
+        <!-- <router-link to="" class="mr-1">Have an invite text?</router-link>
+        <router-link to="/auth" class="ml-1 font-bold">Sign in</router-link> -->
     </div>
    </div>
   </div>

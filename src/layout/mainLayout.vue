@@ -1,7 +1,9 @@
 <template>
   <div class="px-6 ">
     <header class="py-3">
-      <logoIcon/>
+      <router-link to="/">
+        <logoIcon/>
+      </router-link>
 
     </header>
     <router-view/>
