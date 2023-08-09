@@ -1,31 +1,46 @@
 <template>
-    <div>
-        {{ 
-            title
-         }}
-     <input class="px-5 py-2 rounded-lg mt-5  lg:mt-11 number__input"
-      type="number" :placeholder="placeholder" :value="title" @input="chnageValue($event.target.value)">
-    </div>
+  <div>
+    <input
+      class="px-5 py-2 rounded-lg mt-5 lg:mt-11 number__input"
+      :type="type"
+      :placeholder="placeholder"
+      v-model="value"
+    />
+    <span v-if="errors.length" class="block text-red">
+      {{ errors.length && errors[0] }}
+    </span>
+  </div>
 </template>
-
-<script>
+<script >
 export default {
-    props:{
-        placeholder:{
-            type:String,
-            default:""
-        }
+  props: {
+    modelValue: {
+      type: String || Number,
+      default: ''
     },
-    data(){
-        return {
-            title:""
-        }
+    placeholder: {
+      type: String,
+      default: ''
     },
-    methods:{
-        chnageValue(value){
-            this.title = value
-            this.$emit('input',value);
-        }
+    type: {
+      type: String,
+      default: 'text'
+    },
+    errors: {
+      type: Array,
+      default: []
     }
+  },
+  emits: ['update:modelValue'],
+  computed: {
+    value: {
+      get() {
+        return this.modelValue
+      },
+      set(value) {
+        this.$emit('update:modelValue', value)
+      }
+    }
+  }
 }
 </script>

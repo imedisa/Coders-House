@@ -12,5 +12,8 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+  optimizeDeps: {
+    exclude: ['@vee-validate/rules','@vee-validate/i18n'],
+  },
 })

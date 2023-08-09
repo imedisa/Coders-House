@@ -1,6 +1,14 @@
 <script >
+import TextField from '../components/TextField/index.vue'
 export default {
-  
+  components:{
+    TextField
+  },
+  data(){
+    return {
+      phoneNumber:""
+    }
+  }
 }
 </script>
 
