@@ -51,16 +51,30 @@
         </div>
         <!-- STEP-TWO -->
         <div v-else-if="step === 2">
-            <h2>
-              hi
-            </h2>
+          <!-- TITLE -->
+          <div class="flex justify-center items-center gap-x-3">
+            <img
+              class="scale-50 lg:scale-100"
+              src="../assets/images/svgs/Emoji (3).svg"
+              alt="telephone icon =)"
+            />
+            <div class="font-bold text-xs lg:text-xl">Enter the code we just texted you</div>
+          </div>
+          <!-- ENTER CODE -->
+          <div class="mt-6 flex gap-x-3 justify-center">
+            <input id="atext" maxlength="1" class="h-10 text-center focus:shadow-md focus:shadow-blue focus:bg-dark-select rounded-xl w-10 bg-dark-final" type="nubmer">
+            <input id="atext" maxlength="1" class="h-10 text-center focus:shadow-md focus:shadow-blue focus:bg-dark-select rounded-xl w-10 bg-dark-final" type="nubmer">
+            <input id="atext" maxlength="1" class="h-10 text-center focus:shadow-md focus:shadow-blue focus:bg-dark-select rounded-xl w-10 bg-dark-final" type="nubmer">
+            <input id="atext" maxlength="1" class="h-10 text-center focus:shadow-md focus:shadow-blue focus:bg-dark-select rounded-xl w-10 bg-dark-final" type="nubmer">
+
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script>
+<script  type="number/javascript">
 import TextField from '../components/TextField/index.vue'
 export default {
   components: {
@@ -76,7 +90,14 @@ export default {
   methods: {
     nextStep() {
       this.step = 2
-    }
+    },
+    fn()
+{
+    myString=document.getElementById("atext").value;
+    patt=/[A-z]/g;
+    x=patt.test(myString);
+    alert(x);
+}
   }
 }
 </script>
