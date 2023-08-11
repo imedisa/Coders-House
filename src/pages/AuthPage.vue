@@ -22,7 +22,7 @@
                 ref="form"
               >
                 <TextField
-                  placeholder="+91 9823 324223"
+                  placeholder="09123456789"
                   v-model="phoneNumber"
                   type="number"
                   :errors="errors"
@@ -66,8 +66,17 @@
             <input id="atext" maxlength="1" class="h-10 text-center focus:shadow-md focus:shadow-blue focus:bg-dark-select rounded-xl w-10 bg-dark-final" type="nubmer">
             <input id="atext" maxlength="1" class="h-10 text-center focus:shadow-md focus:shadow-blue focus:bg-dark-select rounded-xl w-10 bg-dark-final" type="nubmer">
             <input id="atext" maxlength="1" class="h-10 text-center focus:shadow-md focus:shadow-blue focus:bg-dark-select rounded-xl w-10 bg-dark-final" type="nubmer">
-
           </div>
+          <!-- DIDN'T SEND ANY CODE? -->
+          <div class="text-xs lg:text-sm font-normal mt-4 text-light">Didn’t receive? Tap to resend</div>
+          <!-- BUTTON -->
+          <button
+                    class="
+                    scale-50 lg:scale-100 btn-blue rounded-full px-20 py-4 lg:py-2.5 lg:mt-8 text-lg font-bold"
+                    
+                  >
+                    Next
+                  </button>
         </div>
       </div>
     </div>
