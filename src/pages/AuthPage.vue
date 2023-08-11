@@ -7,7 +7,7 @@
           <div class="flex justify-center gap-x-3">
             <img
               class="scale-50 lg:scale-100"
-              src="../assets/images/svgs/Emoji.svg"
+              src="../assets/images/svgs/Emoji-phone.svg"
               alt="telephone icon =)"
             />
             <div class="font-bold text-sm lg:text-xl">Enter you phone number</div>
@@ -70,13 +70,15 @@
           <!-- DIDN'T SEND ANY CODE? -->
           <div class="text-xs lg:text-sm font-normal mt-4 text-light">Didn’t receive? Tap to resend</div>
           <!-- BUTTON -->
-          <button
+          <router-link to="/SignUp">
+            <button
                     class="
                     scale-50 lg:scale-100 btn-blue rounded-full px-20 py-4 lg:py-2.5 lg:mt-8 text-lg font-bold"
                     
                   >
                     Next
                   </button>
+      </router-link>
         </div>
       </div>
     </div>
