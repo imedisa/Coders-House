@@ -2,6 +2,7 @@
   <div class="text-center h-[calc(100vh-2rem)] flex justify-items-center items-center">
     <div class="rounded-3xl justify-center align-center bg-dark-primary mx-auto">
       <div class="py-8 px-5 sm:px-14 lg:px-32 lg:py-16">
+        <!-- STEP-ONE -->
         <div v-if="step === 1">
           <div class="flex justify-center gap-x-3">
             <img
@@ -48,9 +49,10 @@
             Thanks!
           </p>
         </div>
+        <!-- STEP-TWO -->
         <div v-else-if="step === 2">
             <h2>
-                Hello world
+              hi
             </h2>
         </div>
       </div>
