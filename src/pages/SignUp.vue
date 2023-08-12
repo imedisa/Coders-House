@@ -12,9 +12,9 @@
             <div class="font-bold text-sm lg:text-xl">Enter you phone number</div>
           </div>
             </div>
-            <input type="text" class="px-10 lg:px-16 mt-6 rounded-lg py-2 bg-dark-final placeholder:text-dark-select text-sm lg:text-lg	font-normal" placeholder="Your name">
+            <input type="text" class="px-10 lg:px-16 mt-8 rounded-lg py-2 bg-dark-final placeholder:text-dark-select text-sm lg:text-lg	font-normal" placeholder="Your name">
             <div class="text-light font-normal text-xs lg:text-sm mt-4">People use real names at codershouse :) </div>
-            <router-link to="/SignUp">
+            <router-link to="/choosephoto">
             <button
                     class="
                     scale-50 lg:scale-100 btn-blue rounded-full px-20 py-4 lg:py-2.5 lg:mt-8 text-lg font-bold"
