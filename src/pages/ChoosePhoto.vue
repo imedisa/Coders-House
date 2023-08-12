@@ -18,9 +18,9 @@
           <p>How’s this photo?</p>
         </div>
         <!-- CHOOSEPOHOTO -->
-        <div class="flex justify-center mt-6">
+        <div class="flex flex-col mt-6">
           <div
-            class="content-none bg-blue special-wh relative rounded-full flex items-center justify-center"
+            class="content-none m-auto bg-blue special-wh relative rounded-full flex items-center justify-center"
           >
             <img
               class="rounded-full absolute w-24 h-24 object-cover"
@@ -29,7 +29,7 @@
             />
           </div>
           <!-- UPLOAD -->
-          <div class="relative text-blue">
+          <div class="mt-3 text-xs lg:text-sm  relative text-blue">
             <input
               multiple="false"
               accept="image/*"
@@ -41,6 +41,16 @@
             Choose a different photo
           </div>
         </div>
+        <!-- NEXT BUTTON -->
+        <router-link to="/choosephoto">
+            <button
+                    class="
+                    scale-50 lg:scale-100 btn-blue rounded-full px-20 py-4 lg:py-2.5 lg:mt-8 text-lg font-bold"
+                    
+                  >
+                    Next
+                  </button>
+      </router-link>
       </div>
     </div>
   </div>
@@ -53,7 +63,7 @@ export default {
   data() {
     return {
       imageUrl: "",
-    };
+    }
   },
   methods: {
     async uploadImage(e) {
