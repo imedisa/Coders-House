@@ -48,3 +48,7 @@ input::-webkit-inner-spin-button {
 input{
   outline: none;
 }
+.special-wh{
+  width: 95px;
+  height: 95px;
+}

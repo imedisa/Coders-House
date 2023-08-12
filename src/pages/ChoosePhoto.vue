@@ -29,20 +29,20 @@
             />
           </div>
           <!-- UPLOAD -->
-          <div class="mt-3 text-xs lg:text-sm relative text-blue">
+          <div class="mt-3 text-xs lg:text-sm  relative text-blue">
             <input
               multiple="false"
               accept="image/*"
               id="finput"
               @change="uploadImage"
-              
               type="file"
               class="top-0 right-0 rounded-full w-full h-full cursor-pointer opacity-0 absolute"
             />
             Choose a different photo
           </div>
-          <!-- NEXT BUTTON -->
-          <router-link to="/choosephoto">
+        </div>
+        <!-- NEXT BUTTON -->
+        <router-link to="/choosephoto">
             <button
                     class="
                     scale-50 lg:scale-100 btn-blue rounded-full px-20 py-4 lg:py-2.5 lg:mt-8 text-lg font-bold"
@@ -51,7 +51,6 @@
                     Next
                   </button>
       </router-link>
-        </div>
       </div>
     </div>
   </div>
@@ -64,7 +63,7 @@ export default {
   data() {
     return {
       imageUrl: "",
-          };
+    }
   },
   methods: {
     async uploadImage(e) {
@@ -81,11 +80,6 @@ export default {
         reader.readAsDataURL(blob);
       });
     },
-    defineDefaultImage(){
-      if(this.imageUrl ==false){
-        document.getElementById("imageUrl").setAttribute(src = "../assest/images/svgs/person1.png");
-      }
-    }
   },
 };
 </script>
