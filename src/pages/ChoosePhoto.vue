@@ -22,7 +22,11 @@
           <div
             class="content-none bg-blue special-wh relative rounded-full flex items-center justify-center"
           >
-            <img id="canv1" class="absolute w-24 h-24" src="" alt="">
+            <img
+              class="rounded-full absolute w-24 h-24 object-cover"
+              :src="imageUrl"
+              alt=""
+            />
           </div>
           <!-- UPLOAD -->
           <div class="relative text-blue">
@@ -43,11 +47,28 @@
 </template>
 
 <script>
-export default {
-  methods: {
-    uploadImage(e) {
-      console.log(e.target.files[0]);
+import { url } from "@vee-validate/rules";
 
+export default {
+  data() {
+    return {
+      imageUrl: "",
+    };
+  },
+  methods: {
+    async uploadImage(e) {
+      let file = e.target.files[0];
+      let url = await this.blobToBase64(file);
+      console.log(file);
+      console.log(url);
+      this.imageUrl = url;
+    },
+    blobToBase64(blob) {
+      return new Promise((resolve, _) => {
+        const reader = new FileReader();
+        reader.onloadend = () => resolve(reader.result);
+        reader.readAsDataURL(blob);
+      });
     },
   },
 };
