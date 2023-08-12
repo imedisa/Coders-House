@@ -3,6 +3,7 @@ import HomeView from '../pages/HomeView.vue'
 import AuthPage from '../pages/AuthPage.vue'
 import MainLayout from '../layout/mainLayout.vue'
 import SignUp from '../pages/SignUp.vue'
+import ChoosePhoto from '../pages/ChoosePhoto.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -31,7 +32,14 @@ const router = createRouter({
       },
       component: SignUp
     },
-    
+    {
+      path: '/choosephoto',
+      name: 'choosephoto',
+      meta: {
+        layout: MainLayout
+      },
+      component: ChoosePhoto
+    },
     
     
   ]
