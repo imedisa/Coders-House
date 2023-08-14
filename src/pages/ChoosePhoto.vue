@@ -11,11 +11,11 @@
             src="../assets/images/svgs/Emoji (2).svg"
             alt="telephone icon =)"
           />
-          <div class="font-bold text-sm lg:text-xl">Okay, Rakesh k!</div>
+          <div class="font-bold text-sm lg:text-xl">Okay, Rakesh ok!</div>
         </div>
         <!-- PARAGRAPH -->
         <div class="mt-1 text-xs font-normal lg:text-sm text-light">
-          <p>How’s this photo?</p>
+          <p>How’s this photo?!</p>
         </div>
         <!-- CHOOSEPOHOTO -->
         <div class="flex flex-col mt-6">
